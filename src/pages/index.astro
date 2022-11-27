@@ -1,10 +1,21 @@
 ---
+import Card from '../components/Card.astro';
+import CardGroup from '../components/CardGroup.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<h1>Hello, World !</h1>
+	<main class="flex flex-col justify-between min-h-screen">
+		<div>
+			<h1 class="text-6xl mt-48">shipping modern<br/> full-stack web applications</h1>
+			<p class="mt-12">Michée Allidjinou - On a journey to learn full-stack web development.</p>
+		</div>
+		<CardGroup>
+			<Card title="Bio"/>
+			<Card title="Work"/>
+			<Card title="Contact"/>
+			<Card title="Blog"/>
+		</CardGroup>
 	</main>
 </Layout>
 
